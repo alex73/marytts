@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package marytts.language.ru;
+package marytts.language.be;
 
 import java.util.Locale;
 
@@ -35,7 +35,7 @@ import org.w3c.dom.traversal.NodeIterator;
 
 /**
  * 
- * @author Marc Schr&ouml;der
+ * @author Aleś Bułojčyk
  */
 public class Tokenizer extends marytts.modules.JTokeniser {
 
@@ -43,7 +43,7 @@ public class Tokenizer extends marytts.modules.JTokeniser {
      * 
      */
 	public Tokenizer() {
-		super(MaryDataType.RAWMARYXML, MaryDataType.TOKENS, new Locale("ru"));
+		super(MaryDataType.RAWMARYXML, MaryDataType.TOKENS, new Locale("be"));
 		setTokenizerLanguage("en");
 	}
 
@@ -54,7 +54,7 @@ public class Tokenizer extends marytts.modules.JTokeniser {
 	}
 
 	/**
-	 * For Russian, treat all dots as standalone tokens that trigger end of sentence.
+	 * For Belarusian, treat all dots as standalone tokens that trigger end of sentence.
 	 * 
 	 * @param d
 	 *            d

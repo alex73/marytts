@@ -32,6 +32,11 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
+			<artifactId>marytts-lang-be</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>marytts-lang-de</artifactId>
 			<version>${project.version}</version>
 		</dependency>

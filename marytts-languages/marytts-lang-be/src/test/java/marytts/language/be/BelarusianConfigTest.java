@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package marytts.language.ru;
+package marytts.language.be;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -28,32 +28,30 @@ import java.util.Locale;
 import marytts.config.LanguageConfig;
 import marytts.config.MaryConfig;
 import marytts.exceptions.MaryConfigurationException;
+import marytts.language.be.BelarusianConfig;
 
 import org.junit.Test;
 
-/**
- * @author marc
- *
- */
-public class RussianConfigTest {
-	private static final Locale RUSSIAN = new Locale("ru");
+
+public class BelarusianConfigTest {
+	private static final Locale BELARUSIAN = new Locale("be");
 
 	@Test
 	public void isNotMainConfig() throws MaryConfigurationException {
-		MaryConfig m = new RussianConfig();
+		MaryConfig m = new BelarusianConfig();
 		assertFalse(m.isMainConfig());
 	}
 
 	@Test
 	public void canGet() {
-		MaryConfig m = MaryConfig.getLanguageConfig(RUSSIAN);
+		MaryConfig m = MaryConfig.getLanguageConfig(BELARUSIAN);
 		assertNotNull(m);
-		assertTrue(((LanguageConfig) m).getLocales().contains(RUSSIAN));
+		assertTrue(((LanguageConfig) m).getLocales().contains(BELARUSIAN));
 	}
 
 	@Test
-	public void hasRussianLocale() throws MaryConfigurationException {
-		LanguageConfig e = new RussianConfig();
-		assertTrue(e.getLocales().contains(RUSSIAN));
+	public void hasBelarusianLocale() throws MaryConfigurationException {
+		LanguageConfig e = new BelarusianConfig();
+		assertTrue(e.getLocales().contains(BELARUSIAN));
 	}
 }

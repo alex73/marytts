@@ -11,6 +11,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>marytts-lang-be</module>
 		<module>marytts-lang-de</module>
 		<module>marytts-lang-en</module>
 		<module>marytts-lang-te</module>

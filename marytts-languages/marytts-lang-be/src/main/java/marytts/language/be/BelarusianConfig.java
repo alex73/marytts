@@ -17,13 +17,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package marytts.language.ru;
+package marytts.language.be;
 
 import marytts.config.LanguageConfig;
 import marytts.exceptions.MaryConfigurationException;
 
-public class RussianConfig extends LanguageConfig {
-	public RussianConfig() throws MaryConfigurationException {
-		super(RussianConfig.class.getResourceAsStream("ru.config"));
+public class BelarusianConfig extends LanguageConfig {
+	public BelarusianConfig() throws MaryConfigurationException {
+		super(BelarusianConfig.class.getResourceAsStream("be.config"));
 	}
 }

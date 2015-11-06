@@ -18,7 +18,7 @@
  *
  */
 
-package marytts.language.ru;
+package marytts.language.be;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -50,9 +50,9 @@ import org.w3c.dom.traversal.NodeIterator;
 import org.xml.sax.SAXException;
 
 /**
- * Russian phonemiser module
+ * Belarusian phonemiser module
  *
- * @author Nickolay V. Shmyrev, Marc Schr&ouml;der, Sathish
+ * @author Aleś Bułojčyk
  */
 
 public class Phonemiser extends InternalModule {
